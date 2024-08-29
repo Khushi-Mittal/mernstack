@@ -1,0 +1,58 @@
+/* .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px black;
+    margin-bottom: 1px;
+    background: white;
+}
+.nav-logo{
+    width: 200px;
+}
+.nav-profile{
+    width: 75px;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between the left section and profile icon */
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px black;
+    margin-bottom: 1px;
+    background: white;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center; /* Vertically aligns the logo and text */
+}
+
+.nav-logo {
+    width: 50px;
+    height: auto; /* Ensure the height scales proportionally */
+}
+
+.nav-left p {
+    margin: 0;
+    margin-left: 15px; /* Adds space between the logo and the text */
+    text-align: left;
+}
+
+.nav-profile {
+    width: 40px; /* Adjust size of the profile icon if needed */
+    height: auto;
+}
+
+@media(max-width:800px){
+    .navbar{
+        padding: 15px 30px;
+    } 
+    .nav-logo{
+        width: 150px;
+    }
+    .nav-profile{
+        width: 60px;
+    }
+}
