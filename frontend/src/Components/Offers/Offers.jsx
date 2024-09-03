@@ -6,10 +6,10 @@ const Offers = () => {
   return (
     <div className="offers">
       <div className="offers-left">
-        <h1>Exclusive</h1>
-        <h1>Offers For You</h1>
-        <p>ONLY ON BEST SELLERS PRODUCTS</p>
-        <button>Check now</button>
+        <h1>Unlock Powerful Store</h1>
+        <h1>Management Tools</h1>
+        <p>Discover the Admin Panel</p>
+        <button onClick={()=>{window.location.href='https://mernstack-six.vercel.app/addproduct'}}>Admin Panel</button>
       </div>
       <div className="offers-right">
         <img src={exclusive_image} alt="" />
