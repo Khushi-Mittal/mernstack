@@ -11,10 +11,12 @@ const Shop = () => {
   const [newcollection, setNewCollection] = useState([]);
 
   const fetchInfo = () => { 
-    fetch('https://localhost:4000/popularinwomen') 
+    // fetch('https://localhost:4000/popularinwomen') 
+    fetch('https://mernstack-eb71.onrender.com/popularinwomen') 
+
             .then((res) => res.json()) 
             .then((data) => setPopular(data))
-    fetch('https://localhost:4000/newcollections') 
+    fetch('https://mernstack-eb71.onrender.com/newcollections') 
             .then((res) => res.json()) 
             .then((data) => setNewCollection(data))
     }
